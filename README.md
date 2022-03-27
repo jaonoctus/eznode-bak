@@ -34,7 +34,7 @@ Website: [ezno.de](https://ezno.de)
 [Install Docker](https://docs.docker.com/get-docker/) (the only dependency) and start eznode with the data directory mounted to `/data`:
 
 ```bash
-docker run -it --rm --name ez -v ~/eznode:/data eznode/eznode TOR=1 XPUB=<xpub>
+docker run -it --rm --name ez -v ~/eznode:/data jaonoctus/eznode TOR=1 XPUB=<xpub>
 ```
 
 This will setup a pruned Bitcoin Core full node, a personal Electrum server tracking your `<xpub>`, a block explorer and a Tor onion service for secure remote access. All the information you need for accessing them will be shown on startup.
